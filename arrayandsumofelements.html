@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Array and Sum of Elements</title>
+<script type="text/javascript">
+function arrayCreate() {
+var arr = [];
+var sum = 0;
+var n = parseInt(prompt("Enter number of elements:"));
+document.write("Entered array elements are:<br>");
+for (var i = 0; i < n; i++) {
+arr[i] = prompt("Enter element " + (i + 1) + ":");
+document.write(arr[i] + "<br>");
+sum += parseInt(arr[i]);
+}
+document.write("<br><input type='button' id='find' value='Sum'>");
+setTimeout(function() {
+document.getElementById("find").onclick = function() {
+alert("Sum = " + sum);
+};
+}, 100);
+}
+</script>
+</head>
+<body onload="arrayCreate()">
+</body>
+</html>

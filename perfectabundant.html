@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Perfect, Abundant, or Deficient Checker</title>
+<script>
+function checkNumberType() {
+var number = Number(document.getElementById("N").value);
+var sum = 0;
+if (number <= 0 || isNaN(number)) {
+alert("Please enter a positive integer.");
+return;
+}
+for (var i = 1; i < number; i++) {
+if (number % i === 0) {
+sum += i;
+}
+}
+if (sum === number) {
+alert("The inputed number is Perfect.");
+} else if (sum > number) {
+alert("The inputed number is Abundant.");
+} else {
+alert("The inputed number is Deficient.");
+}
+}
+</script>
+</head>
+<body>
+<h1>Check: Perfect, Abundant, or Deficient Number</h1>
+<label>Enter a number:</label>
+<input type="number" id="N" />
+<br><br>
+<button onclick="checkNumberType()">Check</button>
+</body>
+</html>

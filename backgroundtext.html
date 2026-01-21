@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Program 8</title>
+<script type="text/javascript">
+function focusfunction() {
+document.getElementById("myinput").style.background = "blue";
+document.getElementById("myinput").style.color = "white";
+}
+function blurfunction() {
+document.getElementById("myinput").style.background = "yellow";
+document.getElementById("myinput").style.color = "white";
+}
+</script>
+</head>
+<body>
+<h3>Change text color and background color of a textbox</h3>
+Enter your name:
+<input type="text" id="myinput" onfocus="focusfunction()" onblur="blurfunction()">
+</body>
+</html>

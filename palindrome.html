@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Program 6</title>
+<script type="text/javascript">
+function palindrome(str) {
+var len = str.length;
+for (let i = 0; i < len / 2; i++) {
+if (str[i] !== str[len - i - 1]) {
+alert("Not palindrome");
+return;
+}
+}
+alert("Palindrome");
+return;
+}
+</script>
+</head>
+<body>
+<h3>Check Palindrome or Not</h3>
+<form>
+Enter string:
+<input type="text" id="myinput">
+<input type="submit" value="Check" onclick="palindrome(myinput.value); return false;">
+</form>
+</body>
+</html>

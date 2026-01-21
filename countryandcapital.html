@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Program 9</title>
+<script type="text/javascript">
+function Capital() {
+var c = document.getElementById("mysel").value;
+if (c == "India")
+document.getElementById("demo").value = "New Delhi";
+else if (c == "China")
+document.getElementById("demo").value = "Beijing";
+else if (c == "England")
+document.getElementById("demo").value = "London";
+else if (c == "France")
+document.getElementById("demo").value = "Paris";
+else if (c == "Italy")
+document.getElementById("demo").value = "Rome";
+else if (c == "Pakistan")
+document.getElementById("demo").value = "Islamabad";
+}
+</script>
+</head>
+<body>
+<p>Select a <strong>Country</strong> to view its capital from the list.</p>
+<select id="mysel" onchange="Capital()">
+<option value="India">India</option>
+<option value="China">China</option>
+<option value="England">England</option>
+<option value="France">France</option>
+<option value="Italy">Italy</option>
+<option value="Pakistan">Pakistan</option>
+</select>
+<input type="text" id="demo" value="New Delhi">
+</body>
+</html>
